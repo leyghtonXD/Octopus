@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octopus - Grupo Tecno-Ecologico</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.instagram.com/proyectoctopus/" target="_blank">
+            <img src="octopus.jpeg"  alt="Logo de Octopus" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</Menu></a>
+                    <div class="dropdown-content">
+                        <a href="animales.html">Animales en vía de extinción</a>
+                        <a href="minijuegos.html">Minijuegos</a>
+                        <a href="videos.html">Videos e Imágenes</a>
+                        <a href="contacto.html">Contáctenos</a>
+                        <a href="datos.html">Datos curiosos</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="imagen-banner">
+        <div class="contenido-banner">
+        <p>Somos un grupo Tecno-ecológico dedicado a la conservación del medio ambiente y las playas en Santa Marta y Colombia.</p>
+        </div>
+    </section>
+    
+    <main>
+    </main>
+    <footer>
+        <p>&copy; 2024 Octopus. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
