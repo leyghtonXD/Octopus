@@ -30,7 +30,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 1;
 }
 
 .logo {
@@ -146,22 +145,6 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-
-/* Estilo del contenido dentro del banner, si lo hay */
-.contenido-banner {
-    position: relative;
-    margin-left: 900px;
-    margin-top: 250px;
-    transform: translate(-50%, -50%); /* Centra el contenido horizontal y verticalmente */
-     /* Asegura que el contenido esté sobre la superposición */
-    color: white; /* Color del texto para que sea visible sobre la superposición */
-    text-align: center;
-    padding: 20px;
-}
-
-h1, p {
-    margin: 0;
-}
 /* Animación para el h1 y p */
 @keyframes fadeInUp {
     from {
