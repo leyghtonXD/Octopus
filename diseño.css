@@ -129,23 +129,23 @@ nav ul li a:hover {
     position: relative;
     width: 100%;
     height: 1200px; 
-    margin-bottom: 250px;
-    background-image: url('fondo.jpeg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.377)),url('fondo.jpeg'); 
     background-size: cover; /* Ajusta la imagen para cubrir el ancho del contenedor */
     background-position: center;
-    clip-path: inset(0 0 30% 0);
+    clip-path: inset(10% 0 39% 0);
+    
 }
 
-.imagen-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.089); /* Color de fondo negro con transparencia del 50% */
-     /* Asegura que la superposición esté sobre la imagen */
+.contenido-banner {
+    position: relative;
+    margin-left: 700px;
+    margin-top: 340px;
+    transform: translate(-50%, -50%); /* Centra el contenido horizontal y verticalmente */
+    color: white; /* Color del texto para que sea visible sobre la superposición */
+    text-align: center;
+    padding: 20px;
 }
+
 
 /* Estilo del contenido dentro del banner, si lo hay */
 .contenido-banner {
@@ -182,6 +182,7 @@ h1, p {
 
 .contenido-banner p {
     margin: 10px 0 0;
+    margin-bottom: 150px;
     font-size: 1.2em;
     animation: fadeInUp 1.2s ease-in-out; /* Desvanecimiento y movimiento hacia arriba */
     animation-delay: 0.5s;
