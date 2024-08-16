@@ -13,7 +13,7 @@
         </a>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina.html">Inicio</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Menu</Menu></a>
                     <div class="dropdown-content">
@@ -29,11 +29,46 @@
     </header>
     <section class="imagen-banner">
         <div class="contenido-banner">
-        <h1>Bienvenidos a Octopus</h1>
+            <h1>Bienvenidos a Octopus</h1>
         <p>Somos un grupo Tecno-ecológico dedicado a la conservación del medio ambiente y las playas en Santa Marta y Colombia.</p>
         </div>
     </section>
+
     <main>
+        <div class="carrusel">
+            <div class="carrusel-inner">
+                <div class="carrusel-item active">
+                    <img src="tayrona.jpg" alt="Parque Nacional Natural Tayrona">
+                    <div class="descripcion">
+                        <h2>Parque Nacional Natural Tayrona</h2>
+                        <p>Este parque es uno de los destinos más emblemáticos de Colombia, conocido por su biodiversidad y paisajes asombrosos.</p>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="quinta.jpg" alt="Quinta de San Pedro Alejandrino">
+                    <div class="descripcion">
+                        <h2>Quinta de San Pedro Alejandrino</h2>
+                        <p>La Quinta de San Pedro Alejandrino es una histórica hacienda en Santa Marta, famosa por ser el lugar donde murió Simón Bolívar.</p>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="playa_blanca.jpg" alt="Playa Blanca">
+                    <div class="descripcion">
+                        <h2>Playa Blanca</h2>
+                        <p>Playa Blanca es una de las playas más hermosas de la región, famosa por sus aguas cristalinas y arenas blancas.</p>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="ciudadperdida.jpg" alt="Ciudad Perdida">
+                    <div class="descripcion">
+                        <h2>Ciudad Perdida</h2>
+                        <p>Ciudad Perdida es un sitio arqueológico en la Sierra Nevada de Santa Marta, conocido como el hogar ancestral de los indígenas Tayrona.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carrusel-control prev" onclick="prevSlide()">&#10094;</a>
+            <a class="carrusel-control next" onclick="nextSlide()">&#10095;</a>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Octopus. Todos los derechos reservados.</p>
