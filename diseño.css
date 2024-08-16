@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 html, body{
     height: 100%;
     margin: 0;
@@ -6,7 +8,7 @@ html, body{
 }
 
 body {
-    font-family: 'Segoe UI';
+    font-family: "Poppins", sans-serif;
     background-color: #fafafa;
     margin: 0;
     padding: 0;
@@ -24,12 +26,13 @@ body::before {
 }
 
 header {
-    background-color: #5185d4a2; 
-    padding: 10px 40px;
+    background-color: #245fceaf; 
+    padding: 10px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    font-family: "Nunito";
 }
 
 .logo {
@@ -68,15 +71,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    background-color: white; /* Fondo blanco */
+    color: #000000; /* Texto azul */
     text-decoration: none;
-    padding: 9px 45px;
-    display: block;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px; /* Bordes redondeados */
+    font-family: 'Poppins'; /* Fuente bonita */
+    font-weight: bold;
+    font-style: bold; /* Negrita */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: all 0.3s ease; /* Suaviza las transiciones */
 }
 
 nav ul li a:hover {
-    background-color: #5185d4b2;
+        background-color: #5185d4; /* Fondo azul en hover */
+        color: #ffffff; /* Texto blanco en hover */
     animation: bounce 0.6s;
 }
 
@@ -89,16 +97,15 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #5185d4b2;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 190px;
+    margin-top: 15px;
     z-index: 4;
     border-radius: 0 0 10px 10px;
     overflow: hidden;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .dropdown-content a {
@@ -109,8 +116,8 @@ nav ul li a:hover {
     background-color: #5185d4b2;
 }
 
-.dropdown-content a:hover {
-    background-color: #5185d4b2;
+.dropdown-content a:not(:last-child) {
+    margin-bottom: 5px; /* Añade separación entre los elementos, excepto el último */
 }
 
 .dropdown-content.show {
@@ -128,10 +135,10 @@ nav ul li a:hover {
     position: relative;
     width: 100%;
     height: 1200px; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.377)),url('fondo.jpeg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.267)),url('fondo.jpeg'); 
     background-size: cover; /* Ajusta la imagen para cubrir el ancho del contenedor */
     background-position: center;
-    clip-path: inset(10% 0 39% 0);
+    clip-path: inset(9% 0 39% 0);
     
 }
 
@@ -159,23 +166,95 @@ nav ul li a:hover {
 
 .contenido-banner h1 {
     margin: 0;
-    font-size: 2.5em;
+    word-spacing: 10px;
+    margin-left: 500px;
+    font-size: 47px;
     animation: fadeInUp 1s ease-in-out;
 }
 
 .contenido-banner p {
     margin: 10px 0 0;
     margin-bottom: 150px;
-    font-size: 1.2em;
+    margin-left: 500px;
+    font-size: 15px;
     animation: fadeInUp 1.2s ease-in-out; /* Desvanecimiento y movimiento hacia arriba */
     animation-delay: 0.5s;
 }
 
 
 main {
-    padding: 20px;
-    flex: 1;
+    padding: 2em;
 }
+.carrusel {
+    position: relative;
+    max-width: 1000px; 
+    margin: 100px;
+    margin-top: -200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrusel-item {
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.carrusel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #f2f3f3;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 0.5em;
+}
+
+.carrusel-control.prev {
+    left: 0;
+}
+
+.carrusel-control.next {
+    right: 0;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.descripcion h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.descripcion p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+
 
 footer {
     background-color: #5185d4b2;
