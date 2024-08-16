@@ -218,7 +218,7 @@ main {
 .carrusel-control {
     position: absolute;
     top: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     font-size: 2em;
     color: #f2f3f3;
     cursor: pointer;
