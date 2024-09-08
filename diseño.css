@@ -133,8 +133,7 @@ nav ul li a:hover {
 
 .imagen-banner {
     position: relative;
-    width: 100%;
-    height: 1200px; 
+    width: 100%; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.267)),url('fondo.jpeg'); 
     background-size: cover; /* Ajusta la imagen para cubrir el ancho del contenedor */
     background-position: center;
@@ -167,7 +166,7 @@ nav ul li a:hover {
 .contenido-banner h1 {
     margin: 0;
     word-spacing: 10px;
-    margin-left: 500px;
+    margin-left: 10px;
     font-size: 47px;
     animation: fadeInUp 1s ease-in-out;
 }
@@ -175,7 +174,7 @@ nav ul li a:hover {
 .contenido-banner p {
     margin: 10px 0 0;
     margin-bottom: 150px;
-    margin-left: 500px;
+    margin-left: 0px;
     font-size: 15px;
     animation: fadeInUp 1.2s ease-in-out; /* Desvanecimiento y movimiento hacia arriba */
     animation-delay: 0.5s;
@@ -268,7 +267,16 @@ footer {
     z-index: 1000;
 }
 
+.instagram-logo {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: 40px; /* Mantén las proporciones */
+    margin-top: 10px; /* Espaciado entre el texto y el logo */
+    transition: transform 0.3s ease; /* Suaviza la animación al hacer hover */
+}
 
+.instagram-logo:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del logo al hacer hover */
+}
 /* Agrega estos estilos al final del archivo CSS */
 
 .animal {
@@ -295,6 +303,11 @@ footer {
     background-color: black;
 }
 
+/* Estilos para imágenes responsivas */
+.animal-img {
+    max-width: 20px;
+    height: auto;
+}
 /* Estilos para imágenes responsivas */
 .animal-img {
     max-width: 20px;
