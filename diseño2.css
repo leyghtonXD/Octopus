@@ -166,20 +166,66 @@ nav ul li a:hover {
 
 .contenido-banner h1 {
     margin: 0;
-    margin-left: 500px;
-    font-size: 47px;
+    word-spacing: 10px;
+    margin-left: 10px;
+    font-size: 40px;
     animation: fadeInUp 1s ease-in-out;
 }
 
 .contenido-banner p {
-    margin: 10px 0 0;
     margin-bottom: 150px;
-    margin-left: 500px;
+    margin-left: 0px;
     font-size: 15px;
     animation: fadeInUp 1.2s ease-in-out; /* Desvanecimiento y movimiento hacia arriba */
     animation-delay: 0.5s;
 }
 
+.informacion {
+    padding: 2em;
+    margin-top: -200px;
+    background-color: #fafafa;
+}
+
+.dato-curioso {
+    margin-bottom: 20px;
+}
+
+.dato-curioso h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dato-curioso p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.video-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.video-section video {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-section p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
 
 main {
     padding: 2em;
@@ -195,7 +241,16 @@ footer {
     left: 0;
     z-index: 1000;
 }
+.instagram-logo {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: 40px; /* Mantén las proporciones */
+    margin-top: 10px; /* Espaciado entre el texto y el logo */
+    transition: transform 0.3s ease; /* Suaviza la animación al hacer hover */
+}
 
+.instagram-logo:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del logo al hacer hover */
+}
 
 .contenido {
     display: grid;
@@ -211,5 +266,4 @@ footer {
     background-size: 20px;
     font-size: 30px;
 }
-
 
